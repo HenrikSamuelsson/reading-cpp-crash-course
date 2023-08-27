@@ -15,7 +15,7 @@ int main()
     // Change the value at the address of gettysburg by use of dereference.
     *gettysburg_address = 17325;
 
-    // Print again to check that gettysburg was updated.
+    // Print again to verify that gettysburg was indeed updated.
     printf("Value at gettysburg_address: %d\n", *gettysburg_address);
     printf("Gettysburg Address: %p\n", gettysburg_address);
 
