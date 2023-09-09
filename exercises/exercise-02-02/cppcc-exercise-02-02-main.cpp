@@ -12,4 +12,3 @@ struct Calculator {
     }
     Operation op;
 };
-
