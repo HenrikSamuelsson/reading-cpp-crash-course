@@ -33,6 +33,7 @@ struct Calculator
         default:
             break;
         }
+        
         return result;
     }
     Operation op;
