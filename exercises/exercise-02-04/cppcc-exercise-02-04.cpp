@@ -28,7 +28,7 @@ struct Calculator
             result = a - b;
             break;
         case Operation::Multiply:
-            result = a + b;
+            result = a * b;
             break;
         case Operation::Divide:
             result = a / b;
