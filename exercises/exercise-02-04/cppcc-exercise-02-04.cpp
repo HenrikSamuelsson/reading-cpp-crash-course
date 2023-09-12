@@ -1,3 +1,5 @@
+#include <cstdio>
+
 enum class Operation
 {
     Add,
@@ -41,5 +43,9 @@ struct Calculator
 
 int main()
 {
-    // TODO Make some Calculator objects.
+    Calculator Adder(Operation::Add);
+    int x = 2;
+    int y = 3;
+    int sum = Adder.calculate(x, y);
+    printf("sum = %d\n", sum);
 }
