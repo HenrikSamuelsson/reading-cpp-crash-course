@@ -43,9 +43,22 @@ struct Calculator
 
 int main()
 {
-    Calculator Adder(Operation::Add);
-    int x = 2;
-    int y = 3;
-    int sum = Adder.calculate(x, y);
+    int x = 2;    // First dummy operand used to test the Calculator
+    int y = 3;    // Second dummy operand used to test the Calculator
+    
+    Calculator adder(Operation::Add);
+    int sum = adder.calculate(x, y);
     printf("sum = %d\n", sum);
+
+    Calculator subtractor(Operation::Subtract);
+    int difference = subtractor.calculate(x, y);
+    printf("difference = %d\n", difference);
+
+    Calculator multiplier(Operation::Multiply);
+    int product = multiplier.calculate(x, y);
+    printf("product = %d\n", product);
+
+    Calculator divider(Operation::Divide);
+    int quota = divider.calculate(x, y);
+    printf("quota = %d\n", quota);
 }
